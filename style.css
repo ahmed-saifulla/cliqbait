@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+* {
+    font-family: 'Source Sans 3', sans-serif !important;
+
+}
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #9f9f9f;
+}
+
+/* ------------------- Clients --------------------  */
+.clients {
+    background-color: #000;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.clients img {
+    max-width: 80%;
+}
+.clients .col-12{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:768px) {
+    .clients {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .clients img {
+        max-width: 20%;
+    }
+}
+
+/* -------------------- Outcomes -----------------  */
+.outcomes {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.outcomes h2 {
+    font-weight: 200;
+    color: #000;
+    letter-spacing: -.6vw;
+    font-size: 7vw;
+}
+
+.outcomes .roller {
+    display: inline-block;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #9f9f9f;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outcomes .roller span {
+    position: relative;
+    top: 8px;
+    font-size: 30px;
+}
+
+.card-wrapper {
+    max-height: 400px;
+    overflow: scroll;
+    padding-top: 20%;
+}
+
+
+/* Customize the appearance of the scrollbar for WebKit browsers */
+.card-wrapper::-webkit-scrollbar {
+    width: 12px;
+    /* Set the width of the scrollbar */
+}
+
+.card-wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Set the color of the scrollbar thumb to transparent */
+}
+
+.card-wrapper::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Set the color of the scrollbar track to transparent */
+}
+
+.outcomes .card-wrapper .card h3 {
+    font-weight: normal;
+    color: #000;
+    letter-spacing: -.2vw;
+    font-size: 2.5vw;
+    ;
+}
+
+.outcomes .card-wrapper .card p {
+    letter-spacing: -.09vw;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width:768px) {
+    .card-wrapper {
+        padding-top: 5%;
+    }
+
+    .outcomes .card-wrapper .card h3 {
+        font-size: 2rem;
+        ;
+    }
+
+    .outcomes .card-wrapper .card p {
+        font-size: 1.2rem;
+    }
+}
+
+/* ---------------- Summary A --------------- */
+
+.summary-a {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.summary-a h3 {
+    opacity: 0.5;
+    font-size: 2.5vw;
+    font-weight: normal;
+    letter-spacing: -.2vw;
+}
+
+.summary-a h2 {
+    font-size: 7.8vw;
+    font-weight: 200;
+    letter-spacing: -0.4vw;
+}
+
+/* ---------------- Summary B --------------- */
+
+.summary-b {
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.summary-b h2 {
+    font-size: 7.8vw;
+    font-weight: 200;
+    letter-spacing: -0.4vw;
+    color: #000;
+    text-align: left;
+}
+
+/* ---------------- Summary C --------------- */
+
+/* ----------------- Our Work -----------------------  */
+.our-work {
+    background-color: #000;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.our-work h2 {
+    font-size: 100px;
+}
+
+.our-work .book-a-demo-btn {
+    padding: 13px;
+    width: 140px;
+    border-radius: 50px;
+    outline: 0;
+}
+
+@media screen and (max-width:520px) {
+    .our-work h2 {
+        font-size: 50px;
+    }
+}
+
+/* ------------------- Pricing -------------  */
+.pricing-left {
+    color: red;
+    text-align: center;
+}
+
+.pricing-left h2 {
+    font-size: 200px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.pricing-left p {
+    font-size: 24px;
+    margin-top: 0;
+    position: relative;
+    top: -70px;
+    color: rgba(239, 57, 57, 0.519);
+}
+
+.pricing-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pricing-right h4 {
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.pricing-right p {
+    max-width: 50%;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.pricing .book-a-demo-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    width: 140px;
+    border-radius: 50px;
+    margin-bottom: 100px;
+    outline: 0;
+}
+
+@media screen and (max-width:1024px) {
+
+    .pricing-left h2 {
+        font-size: 120px;
+        text-align: left;
+    }
+
+    .pricing-left p {
+        text-align: right;
+    }
+
+    .pricing-right h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+        line-height: 24px;
+        font-size: 20px;
+    }
+
+    .pricing-right p {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+}
+
+@media screen and (max-width:520px) {
+
+    .pricing-left h2 {
+        font-size: 90px;
+    }
+
+    .pricing-left p {
+        font-size: 18px;
+        top: -40px;
+    }
+
+    .pricing-right h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+        line-height: 24px;
+        font-size: 20px;
+    }
+
+}
+
+/* -------------------------- Choose from ---------------------  */
+.choose-from {
+    padding-bottom: 5%;
+}
+
+.choose-from h3 {
+    font-weight: normal;
+    color: #000;
+}
+
+.choose-from ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 28px;
+}
+
+
+
+/* -------------------------- Try us ---------------------  */
+.try-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    padding-top: 10%;
+    color: #e1e1e1;
+}
+
+.try-us .title {
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+.para {
+    max-width: 28%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.try-us .book-a-demo-btn {
+    padding: 15px;
+    width: 140px;
+    border-radius: 50px;
+    margin-bottom: 100px;
+    outline: 0;
+}
+
+.copyright {
+    font-size: inherit;
+}
+
+@media screen and (max-width:768px) {
+    .try-us .title {
+        font-size: 40px;
+    }
+
+    .para {
+        max-width: 80%;
+        font-size: 16px;
+    }
+
+    .try-us .book-a-demo-btn {
+        padding: 10px;
+        width: 100px;
+        border-radius: 20px;
+        margin-bottom: 70px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .try-us .title {
+        font-size: 40px;
+    }
+
+    .para {
+        max-width: 80%;
+        font-size: 16px;
+    }
+
+    .try-us .book-a-demo-btn {
+        padding: 10px;
+        width: 100px;
+        border-radius: 20px;
+        margin-bottom: 70px;
+    }
+}
