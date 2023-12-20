@@ -477,12 +477,17 @@ body {
     letter-spacing: -.05vw;
     font-size: .875vw;
     color: rgba(198, 201, 204, .8);
+    position: relative;
+    bottom: -50px;
 }
 
 @media screen and (max-width:1024px) {
     .try-us {
         min-height: auto;
         padding-bottom: 10%;
+    }
+    .copyright {
+        bottom: -80px;
     }
 }
 
@@ -508,6 +513,7 @@ body {
     .copyright {
         letter-spacing: -.5px;
         font-size: .875rem;
+        bottom: 0;
     }
 }
 
@@ -524,5 +530,8 @@ body {
 
     .try-us .book-a-demo-btn {
         width: 129px;
+    }
+    .copyright{
+        bottom: 0px;
     }
 }
