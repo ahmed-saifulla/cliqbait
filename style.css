@@ -431,6 +431,13 @@ body {
 .choose-from h3 {
     font-weight: normal;
     color: #000;
+    letter-spacing: -.06rem;
+    font-size: 1.2rem;
+}
+
+.choose-from-list-wrap {
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .choose-from ul {
@@ -438,8 +445,13 @@ body {
     padding: 0;
     line-height: 28px;
     margin: 0;
+    letter-spacing: -.0625rem;
+    font-size: 1.125rem;
 }
 
+.choose-from ul li {
+    margin-bottom: 20px;
+}
 
 
 /* -------------------------- Try us ---------------------  */
