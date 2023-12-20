@@ -10,6 +10,18 @@ body {
     color: #9f9f9f;
 }
 
+.container-fluid {
+    padding-left: 38px !important;
+    padding-right: 38px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .container-fluid {
+        padding-left: 4vw !important;
+        padding-right: 4vw !important;
+    }
+}
+
 .categoy h2 {
     letter-spacing: -.4vw;
     font-size: 5vw;
@@ -425,6 +437,7 @@ body {
     list-style-type: none;
     padding: 0;
     line-height: 28px;
+    margin: 0;
 }
 
 
@@ -486,6 +499,7 @@ body {
         min-height: auto;
         padding-bottom: 10%;
     }
+
     .copyright {
         bottom: -80px;
     }
@@ -494,7 +508,7 @@ body {
 @media screen and (max-width:768px) {
 
     .try-us {
-        padding-bottom:unset;
+        padding-bottom: unset;
     }
 
     .try-us .title {
@@ -531,7 +545,8 @@ body {
     .try-us .book-a-demo-btn {
         width: 129px;
     }
-    .copyright{
+
+    .copyright {
         bottom: 0px;
     }
 }
