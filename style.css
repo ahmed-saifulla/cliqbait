@@ -432,7 +432,7 @@ body {
     font-weight: normal;
     color: #000;
     letter-spacing: -.06rem;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
 }
 
 .choose-from-list-wrap {
@@ -451,6 +451,12 @@ body {
 
 .choose-from ul li {
     margin-bottom: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    .choose-from h3 {
+        font-size: 1.2rem;
+    }
 }
 
 
