@@ -219,8 +219,23 @@ body {
 
 .summary-a h2 {
     font-size: 7.8vw;
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: -0.4vw;
+    color: #000;
+}
+@media screen and (max-width:1024px){
+    .summary-a h2 {
+        letter-spacing: -.55rem;
+        font-size: 6rem;
+        line-height: 1.4;
+    }
+}
+@media screen and (max-width:768px){
+    .summary-a h2 {
+        letter-spacing: -.175rem;
+        font-size: 2.5rem;
+        line-height: 1.33;
+    }
 }
 
 /* ---------------- Summary B --------------- */
@@ -238,6 +253,7 @@ body {
     color: #000;
     text-align: left;
     line-height: 1.4;
+    margin-bottom: 150px;
     font-weight: 400;
 }
 
@@ -282,13 +298,13 @@ body {
     font-size: 1.5rem;
     line-height: 1.66;
 }
+
 .categories .categoy li {
     margin-bottom: 8px;
 }
 
 @media screen and (max-width:1024px) {
     .categories .title {
-        margin-bottom: 150px;
         letter-spacing: -.55rem;
         font-size: 6rem;
         line-height: 1.4;
