@@ -26,70 +26,6 @@ body {
     }
 }
 
-.categoy h2 {
-    letter-spacing: -.4vw;
-    font-size: 5vw;
-    color: #000;
-    font-weight: normal;
-    margin-top: 0;
-}
-
-.categoy .book-a-demo-btn {
-    padding: 13px;
-    width: 140px;
-    border-radius: 50px;
-    outline: 0;
-    margin-left: 10px;
-    /* position: relative; */
-    top: 48px;
-}
-
-.categoy h3 {
-    letter-spacing: -.2vw;
-    font-size: 2.5vw;
-    font-weight: normal;
-    color: #000;
-}
-
-.categoy ul {
-    letter-spacing: -.09vw;
-    font-size: 1.5vw;
-    list-style-type: none;
-    padding: 0;
-}
-
-@media screen and (max-width:768px) {
-
-    .categoy h2 {
-        letter-spacing: -.2rem;
-        font-size: 2.5rem;
-    }
-
-    .categoy .book-a-demo-btn {
-        position: relative;
-        top: 8px;
-        border: 0;
-        background-color: #e1e1e1;
-        color: black;
-        border-radius: 999px;
-        justify-content: center;
-        align-items: center;
-        padding: 0.75em 1.25em;
-        font-size: 1em;
-        line-height: 1;
-        display: flex;
-    }
-
-    .categoy h3 {
-        letter-spacing: -.15rem;
-        font-size: 2rem;
-    }
-
-    .categoy ul {
-        letter-spacing: -.06rem;
-        font-size: 1.2rem;
-    }
-}
 
 /* ----------------------- Startegy ----------------  */
 .startegic h2 {
@@ -289,18 +225,119 @@ body {
 
 /* ---------------- Summary B --------------- */
 
-.summary-b {
-    text-align: center;
-    padding-top: 7%;
-    padding-bottom: 7%;
+.categories {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.summary-b h2 {
+
+
+.categories .title {
+    letter-spacing: -.6vw;
     font-size: 7.8vw;
-    font-weight: 200;
-    letter-spacing: -0.4vw;
     color: #000;
     text-align: left;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.categories .categoy h2 {
+    letter-spacing: -.4vw;
+    font-size: 5vw;
+}
+
+.categories .categoy h2 {
+    letter-spacing: -.4vw;
+    font-size: 5vw;
+    color: #000;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.categories .categoy .book-a-demo-btn {
+    border-radius: 999px;
+    border: 0;
+    background-color: #e1e1e1;
+    margin-right: auto;
+    position: relative;
+    top: 48px;
+    height: 3.8vw;
+    width: 10vw;
+    padding: 0.5rem 1.5rem;
+    font-size: 1vw;
+}
+
+.categories .categoy h3 {
+    letter-spacing: -.2vw;
+    font-size: 2.5vw;
+    font-weight: normal;
+    color: #000;
+}
+
+.categories .categoy ul {
+    list-style-type: none;
+    padding: 0;
+
+    letter-spacing: -.08rem;
+    font-size: 1.5rem;
+    line-height: 1.66;
+}
+.categories .categoy li {
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width:1024px) {
+    .categories .title {
+        margin-bottom: 150px;
+        letter-spacing: -.55rem;
+        font-size: 6rem;
+        line-height: 1.4;
+    }
+
+    .categories .categoy h2 {
+        letter-spacing: -.4rem;
+        font-size: 5rem;
+    }
+
+    .categories .categoy h3 {
+        letter-spacing: -.2rem;
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .categories .title {
+        letter-spacing: -.175rem;
+        font-size: 2.5rem;
+        line-height: 1.33;
+    }
+
+    .categories .categoy h2 {
+        letter-spacing: -.2rem;
+        font-size: 2.5rem;
+    }
+
+    .categories .categoy .book-a-demo-btn {
+        min-width: 123px;
+        min-height: 58px;
+        top: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .categories .categoy h3 {
+        letter-spacing: -.15rem;
+        font-size: 2rem;
+    }
+
+    .categories .categoy ul {
+        letter-spacing: -.06rem;
+        font-size: 1.2rem;
+    }
 }
 
 /* ---------------- Summary C --------------- */
