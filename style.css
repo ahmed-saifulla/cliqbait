@@ -15,6 +15,10 @@ body {
     padding-right: 38px !important;
 }
 
+.f-grow-1 {
+    flex-grow: 1;
+}
+
 @media screen and (max-width: 768px) {
     .container-fluid {
         padding-left: 4vw !important;
@@ -327,22 +331,39 @@ body {
 }
 
 /* ------------------- Pricing -------------  */
-.pricing-left {
-    color: red;
+.pricing {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing h3 {
+    font-weight: normal;
     text-align: center;
 }
 
+.pricing-left {
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .pricing-left h2 {
-    font-size: 200px;
     margin-bottom: 0;
     margin-top: 0;
+    letter-spacing: -2.2vw;
+    font-size: 18vw;
+    font-weight: normal;
 }
 
 .pricing-left p {
-    font-size: 24px;
+    letter-spacing: -.2vw;
+    font-size: 2.5vw;
     margin-top: 0;
     position: relative;
-    top: -70px;
+    top: -50px;
     color: rgba(239, 57, 57, 0.519);
 }
 
@@ -377,6 +398,13 @@ body {
 }
 
 @media screen and (max-width:1024px) {
+    .pricing {
+        min-height: auto;
+    }
+
+    .pricing-left h2 {
+        margin-bottom: 100px;
+    }
 
     .pricing-left h2 {
         font-size: 120px;
@@ -384,7 +412,9 @@ body {
     }
 
     .pricing-left p {
-        text-align: right;
+        top: -130px;
+        letter-spacing: -.2vw;
+        font-size: 2.5vw;
     }
 
     .pricing-right h4 {
@@ -406,12 +436,17 @@ body {
 @media screen and (max-width:520px) {
 
     .pricing-left h2 {
-        font-size: 90px;
+        letter-spacing: -.7rem;
+        font-size: 5.5rem;
+        margin-bottom: 0;
     }
 
     .pricing-left p {
-        font-size: 18px;
+        letter-spacing: -.1rem;
+        margin-bottom: 0;
+        font-size: 1.5rem;
         top: -40px;
+        text-align: right;
     }
 
     .pricing-right h4 {
