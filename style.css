@@ -212,9 +212,9 @@ body {
 
 .summary-a h3 {
     opacity: 0.5;
-    font-size: 2.5vw;
     font-weight: normal;
     letter-spacing: -.2vw;
+    font-size: 2.5vw;
 }
 
 .summary-a h2 {
@@ -223,18 +223,33 @@ body {
     letter-spacing: -0.4vw;
     color: #000;
 }
-@media screen and (max-width:1024px){
+
+@media screen and (max-width:1024px) {
+    .summary-a h3 {
+        letter-spacing: -.2rem;
+        font-size: 2.5rem;
+    }
+
     .summary-a h2 {
         letter-spacing: -.55rem;
         font-size: 6rem;
         line-height: 1.4;
     }
 }
-@media screen and (max-width:768px){
+
+@media screen and (max-width:768px) {
+
     .summary-a h2 {
         letter-spacing: -.175rem;
         font-size: 2.5rem;
         line-height: 1.33;
+    }
+
+    .summary-a h3 {
+        opacity: 0.5;
+        font-weight: normal;
+        letter-spacing: -.15rem;
+        font-size: 2rem;
     }
 }
 
