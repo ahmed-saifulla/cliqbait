@@ -94,12 +94,12 @@ body {
 /* ------------------- Clients --------------------  */
 .clients {
     background-color: #000;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .clients img {
-    max-width: 80%;
+    max-height: 35px;
 }
 
 .clients .col-12 {
@@ -108,13 +108,8 @@ body {
 }
 
 @media screen and (max-width:768px) {
-    .clients {
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-
     .clients img {
-        max-width: 20%;
+        max-height: 25px;
     }
 }
 
