@@ -28,6 +28,10 @@ body {
 
 
 /* ----------------------- Startegy ----------------  */
+.startegic {
+    background-color: #fff;
+}
+
 .startegic h2 {
     letter-spacing: -.6vw;
     font-size: 7.8vw;
@@ -46,11 +50,12 @@ body {
 }
 
 .startegic .book-a-demo-btn {
-    padding: 13px;
-    width: 140px;
+    width: 157px;
+    height: 58px;
     border-radius: 50px;
-    outline: 0;
+    border: 0;
     margin-left: 10px;
+    font-size: 1em;
 }
 
 .startegic .book-a-demo-btn.black {
@@ -62,6 +67,14 @@ body {
     display: flex;
     justify-content: end;
     margin-bottom: 24px;
+}
+
+@media screen and (max-width:1024px) {
+    .startegic .book-a-demo-btn {
+        width: 128px;
+        height: 48px;
+        font-size: 1vw;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -88,6 +101,12 @@ body {
 
     .startegic h2 span {
         margin-left: 0;
+    }
+
+    .startegic .book-a-demo-btn {
+        width: 157px;
+        height: 58px;
+        font-size: 1em;
     }
 }
 
@@ -206,9 +225,9 @@ body {
         width: 7vw;
         height: 7vw;
     }
-    
+
     .outcomes .roller span {
-            top: 8px;
+        top: 8px;
     }
 }
 
@@ -232,7 +251,7 @@ body {
         font-size: 1.2rem;
         line-height: 1.66;
     }
-    
+
     .outcomes .roller {
         font-size: 10vw;
         width: 14vw;
