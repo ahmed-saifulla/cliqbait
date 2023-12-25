@@ -16,6 +16,7 @@
 
     <section class="hero">
         <div class="container-full" id="hero-container">
+            <!-- <h1 class="title">CliqBait</h1> -->
             <div class="row">
                 <div class="col-3" id="first-col">
                     <img class="hero-grid-img"
@@ -481,10 +482,13 @@
             var value = window.scrollY * -0.01;
             // elem.style.transform = `translatex(-10%) translatey(-10%) rotate(${value}deg)`;
             elemHero.style.transform = `rotate(${value}deg)`;
+            
             firstCol.style.transform = `translatey(${value * 3}%)`;
             secondCol.style.transform = `translatey(${value * 4}%)`;
             thirdCol.style.transform = `translatey(${value * 5}%)`;
             fourthCol.style.transform = `translatey(${value * 6}%)`;
+
+            elemHero.style.opacity = 1-(value * -0.2)
         });
     </script>
 </body>

@@ -41,6 +41,13 @@ body {
     /* left: -20%; */
 
 }
+.hero .title{
+    position: absolute;
+    top: 0;
+    color: #000;
+    z-index: 999;
+    text-align: center;
+}
 .hero-grid-img{
     display: block;
     max-width: 100%;
