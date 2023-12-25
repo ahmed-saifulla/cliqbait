@@ -15,7 +15,78 @@
     </section>
 
     <section class="hero">
-
+        <div class="container-full" id="hero-container">
+            <div class="row">
+                <div class="col-3" id="first-col">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                </div>
+                <div class="col-3" id="second-col">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                </div>
+                <div class="col-3" id="third-col">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                </div>
+                <div class="col-3" id="fourth-col">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                    <img class="hero-grid-img"
+                        src="https://assets-global.website-files.com/64b117fb0e09e8ce5768e4fe/64ba4bd9fa4742b8e1f3b6f6_LAYOUT-7.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="startegic">
@@ -395,6 +466,27 @@
             </div>
         </div>
     </section>
+
+    <script>
+
+
+        // var elem = document.querySelector('div');
+        var elemHero = document.querySelector('#hero-container');
+        var firstCol = document.querySelector('#first-col');
+        var secondCol = document.querySelector('#second-col');
+        var thirdCol = document.querySelector('#third-col');
+        var fourthCol = document.querySelector('#fourth-col');
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY * -0.01;
+            // elem.style.transform = `translatex(-10%) translatey(-10%) rotate(${value}deg)`;
+            elemHero.style.transform = `rotate(${value}deg)`;
+            firstCol.style.transform = `translatey(${value * 3}%)`;
+            secondCol.style.transform = `translatey(${value * 4}%)`;
+            thirdCol.style.transform = `translatey(${value * 5}%)`;
+            fourthCol.style.transform = `translatey(${value * 6}%)`;
+        });
+    </script>
 </body>
 
 </html>
