@@ -14,9 +14,12 @@
 
     </section>
 
+    <div class="title-wrap" id="titleWrap">
+        <h1 class="title">CliqBait</h1>
+    </div>
+
     <section class="hero">
         <div class="container-full" id="hero-container">
-            <!-- <h1 class="title">CliqBait</h1> -->
             <div class="row">
                 <div class="col-3" id="first-col">
                     <img class="hero-grid-img"
@@ -479,16 +482,32 @@
         var fourthCol = document.querySelector('#fourth-col');
 
         window.addEventListener('scroll', function () {
+            var scroll = this.scrollY; // access scroll value
+            // console.log(scroll);
+            let elemTitle = document.getElementById("titleWrap");
+            if (window.screen.width > 768 && (scroll < 180 || scroll > 450)) {
+                elemTitle.style.opacity="0"
+            }
+            else if (window.screen.width > 768 && (scroll >= 180 || scroll <= 450)){
+                elemTitle.style.opacity="1"
+            }
+            else if (window.screen.width < 768 && (scroll < 20 || scroll > 200)){
+                elemTitle.style.opacity="0"
+            }
+            else if (window.screen.width < 768){
+                elemTitle.style.opacity="1"
+            }
+
             var value = window.scrollY * -0.01;
             // elem.style.transform = `translatex(-10%) translatey(-10%) rotate(${value}deg)`;
             elemHero.style.transform = `rotate(${value}deg)`;
-            
+
             firstCol.style.transform = `translatey(${value * 3}%)`;
             secondCol.style.transform = `translatey(${value * 4}%)`;
             thirdCol.style.transform = `translatey(${value * 5}%)`;
             fourthCol.style.transform = `translatey(${value * 6}%)`;
 
-            elemHero.style.opacity = 1-(value * -0.2)
+            elemHero.style.opacity = 1 - (value * -0.2)
         });
     </script>
 </body>
